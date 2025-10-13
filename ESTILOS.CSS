@@ -1,0 +1,86 @@
+body {
+    
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hwb(0 6% 73% / 0.171);
+   
+}
+body {
+    font-size: 100%; /* Define o tamanho base como 100% (16px padrão) */
+}
+
+h1 {
+    font-size: 2.5rem; /* Tamanho relativo para títulos principais */
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem; /* Tamanho relativo para subtítulos */
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem; /* Tamanho relativo para subtítulos menores */
+    margin-bottom: 1rem;
+}
+
+p, ul li {
+    font-size: 1rem; /* Tamanho relativo para parágrafos e itens de lista */
+    line-height: 1.6; /* Espaçamento entre linhas para melhorar a legibilidade */
+    margin-bottom: 1rem;
+}
+
+
+   
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #38171756;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 , h4 {
+   font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+    color: #f7f7f7;
+}
+
+/* Cabeçalho */
+main {
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+    align-items: baseline;
+    padding: 1rem 2rem;
+   
+    color: #110b0b;
+    border-radius: 30px;
+    margin: 1rem;
+}
+
+
+
+
+img {
+
+  border-radius: 20px; ;
+    max-width: 10%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    width: 50%; /* Define a largura da imagem como 50% do contêiner */
+    display: block; /* Remove espaços extras ao redor da imagem */
+    margin: 1% /* Centraliza a imagem */
+}
+
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #222;
+    color: #fff;
+    font-size: 0.9rem;
+
+}
