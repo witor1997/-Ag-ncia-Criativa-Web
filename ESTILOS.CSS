@@ -6,31 +6,6 @@ body {
     background-color: hwb(0 6% 73% / 0.171);
    
 }
-body {
-    font-size: 100%; /* Define o tamanho base como 100% (16px padrão) */
-}
-
-h1 {
-    font-size: 2.5rem; /* Tamanho relativo para títulos principais */
-    margin-bottom: 1rem;
-}
-
-h2 {
-    font-size: 2rem; /* Tamanho relativo para subtítulos */
-    margin-bottom: 1rem;
-}
-
-h3 {
-    font-size: 1.5rem; /* Tamanho relativo para subtítulos menores */
-    margin-bottom: 1rem;
-}
-
-p, ul li {
-    font-size: 1rem; /* Tamanho relativo para parágrafos e itens de lista */
-    line-height: 1.6; /* Espaçamento entre linhas para melhorar a legibilidade */
-    margin-bottom: 1rem;
-}
-
 
    
 
@@ -49,6 +24,7 @@ h1, h2, h3 , h4 {
 
 /* Cabeçalho */
 main {
+    
     display: flex;
     flex-direction: row;
 justify-content: space-between;
@@ -60,22 +36,45 @@ justify-content: space-between;
     margin: 1rem;
 }
 
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-stretch: extra-condensed	;
+    color: #0a0a0a;
+    text-align:
+}
 
-
-
-img {
-
-  border-radius: 20px; ;
-    max-width: 10%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    width: 50%; /* Define a largura da imagem como 50% do contêiner */
-    display: block; /* Remove espaços extras ao redor da imagem */
-    margin: 1% /* Centraliza a imagem */
+button {
+    background-color: #97807c;
+    color: #0f0e0e;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 
 
-/* Rodapé */
+
+header {
+    background-color: #222;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: #753838;
+    border-radius: 10px;
+    border-left: 10%;
+}
+img {
+
+  border-radius: 30px; ;
+    max-width: 10%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    width: 50%; /* Define a largura da imagem como 50% do contêiner */
+    display: block; 
+    margin: 1% auto; /* Centraliza a imagem horizontalmente */
+}
+
+
 footer {
     text-align: center;
     padding: 2rem 1rem;
@@ -83,4 +82,53 @@ footer {
     color: #fff;
     font-size: 0.9rem;
 
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #f7f7f7;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header img {
+        width: 70%; /* Reduz a largura da imagem em telas menores */
+    }
+
+    section {
+        padding: 1.5rem;
+        margin: 0.5rem;
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 1.5rem; /* Reduz o tamanho dos títulos */
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 90%; /* Ajusta a largura da imagem para telas muito pequenas */
+    }
+
+    section {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 1.2rem; /* Reduz ainda mais os títulos */
+    }
+
+    ul li {
+        font-size: 0.9rem; /* Ajusta o tamanho do texto */
+    }
 }
