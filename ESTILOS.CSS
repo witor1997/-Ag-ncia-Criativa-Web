@@ -4,12 +4,19 @@ body {
     margin: 0;
     padding: 0;
     background-color: hwb(0 6% 73% / 0.171);
+    color: #0a0a0a;
    
+}
+.section__descricao {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    border-radius: 10px;
 }
 
    
 
-section {
+.section {
     padding: 2rem;
     margin: 1rem;
     background-color: #38171756;
@@ -17,118 +24,123 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3 , h4 {
-   font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-    color: #f7f7f7;
+ul {
+    list-style-type: none;
+    padding: 8px;
+    margin: 10px;
 }
-
-/* Cabeçalho */
-main {
-    
-    display: flex;
-    flex-direction: row;
-justify-content: space-between;
-    align-items: baseline;
-    padding: 1rem 2rem;
-   
-    color: #110b0b;
-    border-radius: 30px;
-    margin: 1rem;
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-stretch: extra-condensed	;
-    color: #0a0a0a;
-    text-align:left
-}
-
 button {
-    background-color: #97807c;
-    color: #0f0e0e;
+    background-color: #1e83d6;
+    color: #fff;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 5px;
     cursor: pointer;
-}
-
-
-
-
-header {
-    background-color: #222;
-    padding: 1rem 2rem;
-    text-align: center;
-    color: #753838;
-    border-radius: 10px;
-    border-left: 10%;
-}
-img {
-
-  border-radius: 30px; ;
-    max-width: 10%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    width: 50%; /* Define a largura da imagem como 50% do contêiner */
-    display: block; 
-    margin: 1% auto; /* Centraliza a imagem horizontalmente */
-}
-
-
-footer {
-    text-align: center;
-    padding: 2rem 1rem;
-    background-color: #222;
-    color: #fff;
-    font-size: 0.9rem;
-
-}
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 0.5rem;
     font-size: 1rem;
-    color: #f7f7f7;
 }
+button:hover {
+    background-color: #586068;
+}
+.header {
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header__logo {
+    max-width: 100%;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+.section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #38171756;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.section__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #740c1a;
+}
+ .lista { 
+    margin: 0 auto;
+    padding: 0%;
+    max-width: 2000px;
+ }
+.lista__item {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+.form__label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+
+.form__input,
+.form__textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.footer {
+    background-color: #1e83d6;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.footer__text {
+    font-size: 0.9rem;
+}
+
+
+
+
 
 /* Responsividade */
 @media (max-width: 768px) {
-    header img {
-        width: 70%; /* Reduz a largura da imagem em telas menores */
+    .header__logo {
+         max-width: 120px; 
     }
 
-    section {
+    .section {
         padding: 1.5rem;
-        margin: 0.5rem;
+    }
+.section__title {
+        font-size: 1.25rem;
     }
 
-    h1, h2, h3, h4 {
-        font-size: 1.5rem; /* Reduz o tamanho dos títulos */
-    }
-
-    main {
-        padding: 1rem;
+    .form {
+        padding: 1.5rem;
     }
 }
 
 @media (max-width: 480px) {
-    header img {
-        width: 90%; /* Ajusta a largura da imagem para telas muito pequenas */
+    .header__logo {   
+        padding: 1.5rem;
+        width: 100px; 
     }
 
-    section {
+    .section {
         padding: 1rem;
-        margin: 0.5rem;
+        
     }
-
-    h1, h2, h3, h4 {
+}
+    .section__title {
         font-size: 1.2rem; /* Reduz ainda mais os títulos */
     }
 
-    ul li {
-        font-size: 0.9rem; /* Ajusta o tamanho do texto */
+    .form {
+        font-size: 1,0rem; /* Ajusta o tamanho do texto */
     }
-}
