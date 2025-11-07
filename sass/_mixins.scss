@@ -1,5 +1,15 @@
-@mixin center-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@use 'variaveis' as var;
+
+
+
+@mixin repond-to($breakpoint){
+  @if $breakpoint == mobile {
+    @media (max-width: var.$breakpoint-mobile) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (max-width: var.$breakpoint-tablet) {
+      @content;
+    }
+  }
 }

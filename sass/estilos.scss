@@ -1,3 +1,15 @@
-@use 'variaveis';
+// stilos.scss (Arquivo principal para compilação)
 
-@use 'mixins';
+// 1. Abstrações (Variáveis e Mixins)
+@use 'abstracts/variaveis';
+@use 'abstracts/mixins';
+
+// 2. Base (Reset e Tags HTML)
+@use 'base/base';
+
+// 3. Layout (Estrutura global, se houver)
+@use 'layout/layout';
+
+// 4. Componentes (Peças da UI)
+@use 'components/componentes';
+
